@@ -14,6 +14,7 @@ The goal is to demonstrate SQL skills in **data management, reporting, and analy
 
 ## 📂 Project Structure
 Bank-Customer-Transaction-Analytics/
+
 ├── README.md
 
 ├── schema.sql
