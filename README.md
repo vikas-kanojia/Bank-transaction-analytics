@@ -15,13 +15,21 @@ The goal is to demonstrate SQL skills in **data management, reporting, and analy
 ## 📂 Project Structure
 Bank-Customer-Transaction-Analytics/
 ├── README.md
+
 ├── schema.sql
+
 ├── module1_basic_reporting.sql
+
 ├── module2_business_kpis.sql
+
 ├── module3_customer_analytics.sql
+
 ├── module4_branch_performance.sql
+
 ├── module5_risk_analytics.sql
+
 ├── module6_dashboard_kpis.sql
+
 └── report.pdf
 
 
