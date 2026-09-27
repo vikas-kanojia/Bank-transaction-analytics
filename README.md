@@ -1,107 +1,97 @@
-# Bank-transaction-analytics
-“Advanced SQL project analyzing bank customer transactions for Global Trust Bank. Includes 100+ queries across reporting, KPIs, customer analytics, branch performance, fraud detection, and dashboards. Covers beginner to advanced SQL concepts for real-world banking analytics.”
+# 🏦 Bank Transaction Analytics (SQL Project)
 
-# 📊 Bank Customer Transaction Analytics
+## 📊 Project Overview
+Global Trust Bank wants to analyze customer transactions to improve business decisions and detect risks.  
+This project uses **100+ SQL queries** to answer business questions and generate KPIs such as deposits, withdrawals, branch performance, customer analytics, fraud detection, and dashboard metrics.  
 
-## 📌 Overview
-This project analyzes customer banking transactions using SQL.  
-It covers reporting, business KPIs, customer analytics, branch performance, risk analytics, and dashboard KPIs.  
-The dataset includes 50 customers with diverse transactions across multiple cities, states, and branches.  
-
-The goal is to demonstrate SQL skills in **data management, reporting, and analytics** while building a portfolio-ready project.
+It covers **beginner to advanced SQL concepts** applied to real-world banking analytics.
 
 ---
 
-## 📂 Project Structure
-Bank-Customer-Transaction-Analytics/
+## 🗄️ Database Structure
+**Database:** BankDB  
+**Table:** bank_transactions  
 
-├── README.md
-
-├── schema.sql
-
-├── module1_basic_reporting.sql
-
-├── module2_business_kpis.sql
-
-├── module3_customer_analytics.sql
-
-├── module4_branch_performance.sql
-
-├── module5_risk_analytics.sql
-
-├── module6_dashboard_kpis.sql
-
-└── report.pdf
-
-
-## 📊 Modules
-
-### Module 1 – Basic Reporting (Queries 1–20)
-- Customer lists  
-- Deposits & withdrawals  
-- UPI/ATM/Cheque/Net Banking usage  
-- Sorting, distinct values, counts  
-
-### Module 2 – Business KPIs (Queries 21–40)
-- Total business  
-- Deposits & withdrawals  
-- Averages, highest & lowest transactions  
-- Branch/city/state KPIs  
-
-### Module 3 – Customer Analytics (Queries 41–60)
-- Top customers  
-- Transaction frequency  
-- Credit score analysis  
-- Age groups, segments, occupations  
-- Payment channel usage  
-
-### Module 4 – Branch Performance (Queries 61–75)
-- Best & worst branches  
-- Deposits & withdrawals by branch  
-- Growth trends  
-- Cash vs digital transactions  
-- Demographic breakdowns  
-
-### Module 5 – Risk Analytics (Queries 76–90)
-- High-value & suspicious transactions  
-- Loan defaults & overdue accounts  
-- Credit score risk  
-- RBI compliance checks  
-- Fraud detection patterns  
-
-### Module 6 – Dashboard KPIs (Queries 91–100)
-- Summary KPIs for dashboards  
-- Totals, averages, extremes  
-- Branch & monthly KPIs  
-- Ready for visualization in Power BI / Tableau / Excel  
+**Columns:**
+- transaction_id, transaction_date, customer_id, customer_name, gender, age  
+- city, state, branch_name  
+- account_type, customer_segment, occupation  
+- transaction_type, transaction_amount, balance_after_transaction  
+- payment_channel (UPI, ATM, Cheque, Net Banking, Cash)  
+- credit_score, loan_status  
 
 ---
 
-## ▶️ How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Bank-Customer-Transaction-Analytics.git
+## 📂 Repository Contents
+- `schema.sql` → Database & table creation + sample data  
+- `module1_basic_reporting.sql` → Queries 1–20 (basic reporting)  
+- `module2_business_kpis.sql` → Queries 21–40 (business KPIs)  
+- `module3_customer_analytics.sql` → Queries 41–60 (customer analytics)  
+- `module4_branch_performance.sql` → Queries 61–75 (branch performance)  
+- `module5_risk_analytics.sql` → Queries 76–90 (fraud & risk analytics)  
+- `module6_dashboard_kpis.sql` → Queries 91–100 (dashboard KPIs)  
+- `report.pdf` → Insights and KPI results  
 
-   Import schema.sql into MySQL to create the table and load sample data.
+---
 
-   Run queries from each module file (module1_basic_reporting.sql, etc.).
+## 📈 Business Questions Answered
+- Which branch generates the highest deposits?  
+- Which customers are high-value (business above ₹5,00,000)?  
+- Which customers are high-risk (low credit score + frequent withdrawals)?  
+- Which city/state contributes most to business?  
+- Which payment channel is most used (UPI, ATM, Net Banking)?  
+- What are the monthly and quarterly transaction trends?  
+- Which customer segments (Premium, Business, Salary) dominate?  
+- Which branches show growth or decline in performance?  
 
-    View outputs in your SQL client or export results for dashboards.
+---
 
-📑 Report
-A detailed report of findings and KPIs is available in report.pdf.
+## 🛠️ SQL Topics Covered
+- Database creation & table design  
+- SELECT, WHERE, ORDER BY, DISTINCT, LIMIT, LIKE, BETWEEN, IN  
+- Aggregate functions (SUM, AVG, MAX, MIN, COUNT)  
+- GROUP BY, HAVING  
+- Date functions (MONTH(), QUARTER(), YEAR())  
+- Business KPI reporting  
+- Customer & branch analytics  
+- Fraud detection queries  
 
-⚙️ Technologies Used
-MySQL
+---
 
-SQL (DDL, DML, Aggregates, Joins, Grouping)
+## 📊 Business KPIs
+- 💰 Total Business  
+- 📥 Total Deposits  
+- 📤 Total Withdrawals  
+- 📈 Average Transaction Value  
+- 🏆 Highest Transaction  
+- 📉 Lowest Transaction  
+- 🏙️ City-wise Business  
+- 🏦 Branch-wise Performance  
+- 👥 Customer Segment Analysis  
+- 🔍 Fraud & Risk Flags  
+- 📅 Monthly / Quarterly / Yearly Trends  
 
-GitHub for version control
+---
 
-Excel / Power BI / Tableau (for dashboards)
+## 🚀 How to Use
+1. Import `schema.sql` into MySQL to create the table and load sample data.  
+2. Run queries from each module file (`module1_basic_reporting.sql`, etc.).  
+3. Review insights in `report.pdf`.  
+4. Use results to build dashboards in **Excel, Power BI, or Tableau**.  
 
-👨‍💻 Author
-Vikas
+---
 
-Passionate about SQL, Excel, Python, and analytics projects.
+## 📌 Skills Demonstrated
+- SQL query writing and optimization  
+- Business data analysis  
+- KPI reporting  
+- Fraud detection & risk analytics  
+- Database design and management  
+- Real-world application of SQL in banking analytics  
+
+---
+
+## 👨‍💻 Author
+**Vikas**  
+Passionate about SQL, Excel, Python, and analytics projects.  
 Focused on building neat, structured, and professional portfolio projects.
