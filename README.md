@@ -89,9 +89,12 @@ It covers **beginner to advanced SQL concepts** applied to real-world banking an
 - Database design and management  
 - Real-world application of SQL in banking analytics  
 
+
 ---
+
 
 ## 👨‍💻 Author
 **Vikas**  
+
 Passionate about SQL, Excel, Python, and analytics projects.  
 Focused on building neat, structured, and professional portfolio projects.
