@@ -1,0 +1,473 @@
+🏦 BANK TRANSACTION ANALYTICS
+
+SQL Project Report
+
+Project: Bank Transaction Analytics
+Organization: Global Trust Bank
+Database: BankDB
+Main Table: bank_transactions
+Author: Vikas
+
+---
+
+1. Executive Summary
+
+Bank Transaction Analytics is a SQL-based business analytics project developed to help Global Trust Bank analyze customer transactions and support better business decision-making.
+
+The project contains 100+ SQL queries covering transaction reporting, business KPIs, customer analytics, branch performance, risk analytics, fraud detection, and dashboard metrics.
+
+The project demonstrates the practical application of SQL concepts to a real-world banking dataset. It analyzes deposits, withdrawals, transaction amounts, customer segments, branch performance, payment channels, geographic contribution, credit scores, and loan status.
+
+The analysis is divided into six modules, progressing from basic SQL reporting to advanced business and risk analytics.
+
+---
+
+2. Project Objectives
+
+The main objectives of this project are:
+
+- Analyze banking transaction data using SQL.
+- Generate important business KPIs.
+- Understand customer transaction behavior.
+- Identify high-value customers.
+- Analyze deposits and withdrawals.
+- Compare branch performance.
+- Analyze city and state-wise business contribution.
+- Identify frequently used payment channels.
+- Analyze monthly, quarterly, and yearly transaction trends.
+- Identify potential high-risk customers and transactions.
+- Prepare KPI metrics that can be used in dashboards.
+- Demonstrate practical SQL skills using a real-world banking scenario.
+
+---
+
+3. Database Overview
+
+The project uses a MySQL database named BankDB.
+
+The main table used for analysis is:
+
+bank_transactions
+
+The table contains transaction, customer, branch, geographic, payment, credit, and loan-related information.
+
+Database Columns
+
+Category| Columns
+Transaction| transaction_id, transaction_date, transaction_type, transaction_amount, balance_after_transaction
+Customer| customer_id, customer_name, gender, age, occupation, customer_segment
+Location| city, state, branch_name
+Account| account_type, loan_status
+Payment| payment_channel
+Risk/Credit| credit_score
+
+---
+
+4. Project Structure
+
+The project is divided into six SQL modules.
+
+Module 1 – Basic Reporting
+
+Queries 1–20
+
+This module focuses on fundamental SQL reporting and transaction-level analysis.
+
+Topics include:
+
+- SELECT
+- WHERE
+- ORDER BY
+- DISTINCT
+- LIMIT
+- LIKE
+- BETWEEN
+- IN
+- Basic filtering and sorting
+
+Module 2 – Business KPIs
+
+Queries 21–40
+
+This module calculates important banking business metrics.
+
+Examples include:
+
+- Total business
+- Total deposits
+- Total withdrawals
+- Average transaction value
+- Highest transaction
+- Lowest transaction
+- Transaction counts
+- Aggregated business performance
+
+Module 3 – Customer Analytics
+
+Queries 41–60
+
+This module focuses on customer-level analysis.
+
+It examines:
+
+- Customer transaction activity
+- Customer segments
+- High-value customers
+- Customer contribution
+- Customer behavior
+- Credit score information
+- Transaction patterns
+
+A high-value customer can be identified using a business threshold such as transaction/business activity above ₹5,00,000, according to the project's business requirement.
+
+Module 4 – Branch Performance
+
+Queries 61–75
+
+This module analyzes branch-level performance.
+
+It helps answer questions such as:
+
+- Which branch generates the highest deposits?
+- Which branches handle the most business?
+- Which branches show stronger transaction activity?
+- Which branches show growth or decline?
+
+Module 5 – Risk Analytics
+
+Queries 76–90
+
+This module focuses on potential risk and fraud indicators.
+
+It uses transaction behavior and customer information such as:
+
+- Credit score
+- Withdrawal frequency
+- Transaction amount
+- Customer activity
+- Loan status
+
+Customers with combinations such as low credit scores and frequent withdrawals can be flagged for further investigation.
+
+These flags are analytical indicators and should not automatically be treated as confirmed fraud.
+
+Module 6 – Dashboard KPIs
+
+Queries 91–100
+
+The final module prepares important metrics that can be used in dashboards created with:
+
+- Excel
+- Power BI
+- Tableau
+
+---
+
+5. Business Questions
+
+The project is designed to answer several important banking business questions:
+
+1. Which branch generates the highest deposits?
+2. Which customers are high-value customers?
+3. Which customers may be considered high-risk based on transaction and credit characteristics?
+4. Which city contributes the most business?
+5. Which state contributes the most business?
+6. Which payment channel is most frequently used?
+7. What are the monthly transaction trends?
+8. What are the quarterly transaction trends?
+9. Which customer segments dominate the business?
+10. Which branches show growth or decline?
+11. What is the total deposit value?
+12. What is the total withdrawal value?
+13. What is the average transaction value?
+14. What are the highest and lowest transaction amounts?
+15. Which branches and customer groups contribute most to transaction activity?
+
+---
+
+6. Business KPIs
+
+The project includes the following major KPIs.
+
+6.1 Total Business
+
+Measures the overall transaction business represented in the dataset.
+
+6.2 Total Deposits
+
+Measures the total value of deposit transactions.
+
+6.3 Total Withdrawals
+
+Measures the total value of withdrawal transactions.
+
+6.4 Average Transaction Value
+
+Shows the average monetary value of transactions.
+
+6.5 Highest Transaction
+
+Identifies the largest transaction amount in the dataset.
+
+6.6 Lowest Transaction
+
+Identifies the smallest transaction amount in the dataset.
+
+6.7 City-wise Business
+
+Compares transaction activity and business contribution across different cities.
+
+6.8 Branch-wise Performance
+
+Measures and compares business activity between bank branches.
+
+6.9 Customer Segment Analysis
+
+Analyzes customer groups such as:
+
+- Premium
+- Business
+- Salary
+
+and other available customer segments.
+
+6.10 Fraud and Risk Flags
+
+Identifies transaction or customer patterns that may require additional review.
+
+6.11 Time-Based Trends
+
+Analyzes transaction activity by:
+
+- Month
+- Quarter
+- Year
+
+---
+
+7. SQL Concepts Used
+
+The project demonstrates a wide range of SQL concepts.
+
+Basic SQL
+
+- SELECT
+- WHERE
+- ORDER BY
+- DISTINCT
+- LIMIT
+- LIKE
+- BETWEEN
+- IN
+
+Aggregate Functions
+
+- SUM()
+- AVG()
+- MAX()
+- MIN()
+- COUNT()
+
+Grouping
+
+- GROUP BY
+- HAVING
+
+Date Analysis
+
+- MONTH()
+- QUARTER()
+- YEAR()
+
+Business Analytics
+
+- KPI calculations
+- Customer analysis
+- Branch analysis
+- Geographic analysis
+- Risk analysis
+- Fraud detection queries
+
+These concepts demonstrate how SQL can be used not only for data retrieval but also for business analysis.
+
+---
+
+8. Analytical Insights
+
+The project is designed to generate several types of business insights.
+
+Customer Insights
+
+Customer-level analysis can help identify high-value customers and understand differences in transaction activity between customer segments.
+
+Branch Insights
+
+Branch-level analysis can help management compare branches based on deposits, withdrawals, transaction volume, and overall business activity.
+
+Geographic Insights
+
+City and state analysis can identify regions that contribute significantly to banking transaction activity.
+
+Payment Channel Insights
+
+The project compares different payment channels, including:
+
+- UPI
+- ATM
+- Cheque
+- Net Banking
+- Cash
+
+This helps understand customer preferences for different transaction methods.
+
+Risk Insights
+
+Credit scores and transaction behavior can be combined to identify customers or transaction patterns requiring additional risk review.
+
+Trend Insights
+
+Monthly, quarterly, and yearly analysis can help identify changes in transaction activity over time.
+
+---
+
+9. Repository Structure
+
+The project repository contains the following files:
+
+File| Description
+schema.sql| Database and table creation with sample data
+module1_basic_reporting.sql| Queries 1–20: Basic reporting
+module2_business_kpis.sql| Queries 21–40: Business KPIs
+module3_customer_analytics.sql| Queries 41–60: Customer analytics
+module4_branch_performance.sql| Queries 61–75: Branch performance
+module5_risk_analytics.sql| Queries 76–90: Risk and fraud analytics
+module6_dashboard_kpis.sql| Queries 91–100: Dashboard KPIs
+report.pdf| Project report containing insights and KPI framework
+
+---
+
+10. Project Workflow
+
+The project can be executed using the following workflow:
+
+Step 1: Create the Database
+
+Import "schema.sql" into MySQL to create the BankDB database and the "bank_transactions" table.
+
+Step 2: Load the Data
+
+Load the sample transaction data into the banking transaction table.
+
+Step 3: Execute SQL Modules
+
+Run the six SQL modules to perform:
+
+- Basic reporting
+- Business KPI analysis
+- Customer analytics
+- Branch performance analysis
+- Risk analytics
+- Dashboard KPI preparation
+
+Step 4: Analyze Results
+
+Review the SQL outputs and identify important business patterns.
+
+Step 5: Build a Dashboard
+
+The resulting KPIs can be visualized using:
+
+- Excel
+- Power BI
+- Tableau
+
+---
+
+11. Skills Demonstrated
+
+This project demonstrates the following skills:
+
+- SQL query writing
+- SQL data analysis
+- Database creation
+- Database table design
+- Data aggregation
+- KPI development
+- Business reporting
+- Customer analytics
+- Branch performance analysis
+- Fraud and risk analytics
+- Transaction analysis
+- Data-driven decision support
+- Dashboard preparation
+
+---
+
+12. Real-World Business Applications
+
+Bank Transaction Analytics can be applied to several banking use cases.
+
+Business Performance
+
+Banks can monitor transaction volumes and business contribution across branches and locations.
+
+Customer Management
+
+Customer transaction patterns can be used to understand customer activity and identify valuable customer groups.
+
+Branch Management
+
+Branch-level KPIs can help management monitor operational and business performance.
+
+Risk Management
+
+Transaction behavior and credit information can be used as inputs for risk monitoring and further investigation.
+
+Digital Banking
+
+Payment-channel analysis can help banks understand the adoption of digital and traditional payment methods.
+
+Management Dashboards
+
+The KPIs generated through SQL can be connected to dashboard tools for regular monitoring.
+
+---
+
+13. Future Scope
+
+The project can be extended in several ways:
+
+1. Build an interactive Power BI dashboard.
+2. Add automated KPI refresh.
+3. Create advanced fraud detection rules.
+4. Use SQL CTEs and window functions for advanced analytics.
+5. Add historical customer behavior analysis.
+6. Integrate Python for advanced data analysis.
+7. Develop machine-learning models for fraud prediction.
+8. Create branch-level management dashboards.
+9. Add automated monthly and quarterly reports.
+10. Develop separate dashboards for business, customer service, and risk teams.
+
+---
+
+14. Conclusion
+
+The Bank Transaction Analytics project demonstrates how SQL can be used to transform banking transaction data into meaningful business information.
+
+With more than 100 SQL queries organized into six analytical modules, the project covers the complete analytics process from basic transaction reporting to business KPIs, customer analysis, branch performance, risk analytics, and dashboard preparation.
+
+The project provides practical experience in SQL, business analytics, KPI development, database management, and financial data analysis.
+
+It also provides a strong foundation for extending the project into an interactive Power BI, Excel, or Tableau dashboard.
+
+Overall, the project demonstrates the practical use of SQL for analyzing banking transactions and supporting data-driven business reporting.
+
+---
+
+15. Author
+
+Vikas
+
+Passionate about SQL, Excel, Python, and analytics projects.
+
+Focused on building neat, structured, and professional portfolio projects.
